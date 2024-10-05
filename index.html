@@ -131,7 +131,7 @@
         }
     </style>
 </head>
-<div>
+<body>
     <div class="container">
         <h1>Pitch <span>ME!</span></h1>
 
@@ -193,5 +193,137 @@
             <textarea id="feedback"></textarea>
         </div>
   </div>
+  <script>
+    const generateButton = document.getElementById('generateButton');
+    const keyPointsTextArea = document.getElementById('keyPoints');
+    const evaluateButton = document.getElementById('evaluateButton');
+    const feedbackTextArea = document.getElementById('feedback');
+    const userSpeechTextArea = document.getElementById('userSpeech');
+
+
+    const outputText = `Slide 1: Introduction
+Title: GreenCycle - Revolutionizing E-waste Recycling
+Subtitle: Efficient, Sustainable, and Responsible
+Presenter's Name: Emma Taylor, CEO
+Hello everyone, and thank you for joining us today. As we all know, electronic waste is a growing concern worldwide. At GreenCycle, we're committed to making a difference. Our mission is to provide efficient, sustainable, and responsible e-waste recycling solutions for individuals and businesses.
+Slide 2: The Problem
+Title: The E-waste Epidemic
+Key Points:
+•	50 million tons of e-waste generated worldwide each year
+•	Current recycling methods are inefficient, with many electronics ending up in landfills
+•	Environmental and health risks associated with e-waste
+The statistics are alarming. E-waste is a ticking time bomb, and we need to act now. That's why we created GreenCycle.
+Slide 3: Our Solution
+Title: AI-Powered Sorting Technology
+Key Points:
+•	Proprietary technology increases recycling efficiency by 30%
+•	Reduces labor costs and environmental impact
+•	Enables responsible and sustainable e-waste recycling
+Our AI-powered sorting technology is a game-changer. It's faster, more efficient, and more environmentally friendly than traditional methods.
+Slide 4: Market Opportunity
+Title: A Growing Market
+Key Points:
+•	Estimated $10 billion market size in the US alone
+•	Growing at 10% annually
+•	Increasing consumer awareness of environmental issues
+The market is ripe for innovation. With GreenCycle, we're poised to capitalize on this growing demand for sustainable e-waste recycling solutions.
+Slide 5: Competitive Advantage
+Title: What Sets Us Apart
+Key Points:
+•	Proprietary AI-powered sorting technology
+•	Experienced team with expertise in environmental science, software engineering, and marketing
+•	Strong mentorship from Dr. Maria Rodriguez and John Lee
+We have a unique combination of technology, expertise, and mentorship that sets us apart from the competition.
+Slide 6: Business Model
+Title: Revenue Streams
+Key Points:
+•	B2B and B2C revenue streams
+•	Partnerships with electronics manufacturers and retailers
+•	Expansion plans to 10 cities in the US within the next 2 years
+Our business model is designed to generate revenue through multiple channels. We're committed to expanding our services and making a positive impact on the environment.
+Slide 7: Marketing Strategy
+Title: Raising Awareness
+Key Points:
+•	Social media campaigns on Instagram, Twitter, and LinkedIn
+•	Influencer partnerships with eco-influencers and thought leaders
+•	Content marketing through blog posts, videos, and guides
+We're committed to raising awareness about e-waste and promoting GreenCycle's services through a multi-channel approach.
+Slide 8: Team
+Title: Meet the Team
+Key Points:
+•	Emma Taylor, CEO - Environmental scientist with 5 years of experience in waste management
+•	Ryan Thompson, CTO - Software engineer with expertise in AI and machine learning
+•	Maya Patel, Marketing Manager - Experienced marketer with a focus on sustainability and social impact
+Our team is passionate, experienced, and dedicated to making a difference.
+Slide 9: Call to Action
+Title: Join the GreenCycle Movement
+Key Points:
+•	Invest in our mission to revolutionize e-waste recycling
+•	Partner with us to make a positive impact on the environment
+•	Together, we can create a more sustainable future
+Thank you for considering GreenCycle. We invite you to join our movement and be part of the solution to the e-waste epidemic.
+Slide 10: Conclusion
+Title: GreenCycle - Revolutionizing E-waste Recycling
+Subtitle: Efficient, Sustainable, and Responsible
+Presenter's Name: Emma Taylor, CEO
+In conclusion, GreenCycle is poised to make a significant impact on the e-waste recycling industry. With our proprietary AI-powered sorting technology, experienced team, and strong mentorship, we're confident that we can create a more sustainable future. Thank you.
+`;
+generateButton.addEventListener('click', () => {
+        keyPointsTextArea.value = ""; // Clear previous output
+        evaluateButton.disabled = true; // Disable the evaluate button
+        const typingDelay = (Math.floor(Math.random() * (21 - 18 + 1)) + 18) * 1000;
+        setTimeout(() => {
+            typeText(outputText, keyPointsTextArea, () => {
+                evaluateButton.disabled = false; // Enable the evaluate button after generation
+            });
+        }, typingDelay);
+    });
+
+    evaluateButton.disabled = false;
+ const evaluationText = `Evaluation of GreenCycle's Pitch Deck Presentation
+1. Purpose and Audience:
+The speaker, Emma Taylor, effectively defines the purpose of the presentation and addresses the specific needs and interests of the target audience, which includes investors and potential partners in the e-waste recycling industry. The presentation clearly communicates GreenCycle's mission, solution, and vision, demonstrating a good understanding of the audience's concerns and interests. (Score: 8/10)
+2. Content and Structure:
+The presentation is well-organized and coherent, with a clear introduction, body, and conclusion. The content supports the main message with relevant evidence and examples, such as statistics on e-waste generation and the benefits of GreenCycle's AI-powered sorting technology. However, some slides could be more concise, and the transition between slides could be smoother. (Score: 7.5/10)
+3. Delivery and Style:
+Emma Taylor's delivery is confident and expressive, with good voice modulation, eye contact, and gestures. The language and tone are appropriate for the audience and context, conveying a sense of passion and commitment to the mission. However, there are moments where the pace could be slower, and the speaker could pause for emphasis. (Score: 8/10)
+4. Feedback and Improvement (Hypothetical):
+To improve the presentation, I would suggest the following:
+•	Use more visual aids, such as images or videos, to illustrate the problem and solution.
+•	Provide more specific examples of how GreenCycle's technology can be applied in different contexts.
+•	Emphasize the unique value proposition of GreenCycle's solution and how it differs from competitors.
+•	Consider adding a slide on the company's financial projections and growth potential.
+•	Practice the presentation to ensure a smoother delivery and more confident tone.
+5. Ethics and Responsibility:
+The presentation demonstrates a strong commitment to environmental responsibility and sustainability. The information presented is accurate and credible, and potential biases or conflicts of interest are not apparent. However, it would be beneficial to explicitly address any potential environmental or social risks associated with GreenCycle's operations. (Score: 8.5/10)
+6. Impact and Outcome (Predicted):
+Based on this evaluation, I predict that the presentation will likely achieve its intended goal of securing investment and gaining partners. The presentation effectively communicates GreenCycle's mission, solution, and vision, and demonstrates a strong commitment to environmental responsibility and sustainability. The speaker's confident and expressive delivery will likely engage the audience and inspire confidence in the company's potential. However, the outcome will ultimately depend on the audience's specific needs and interests, as well as the competitive landscape of the e-waste recycling industry. (Score: 8/10)
+Overall, GreenCycle's pitch deck presentation is well-structured, informative, and engaging. With some minor improvements in delivery and content, the presentation has the potential to effectively communicate the company's mission and vision to investors and partners, ultimately driving growth and success.
+`;
+evaluateButton.addEventListener('click', () => {
+        if (userSpeechTextArea.value.trim() === '') {
+            feedbackTextArea.value = "Please enter your speech to evaluate.";
+            return;
+        }
+        feedbackTextArea.value = ""; // Clear previous feedback
+        const typingDelay = (Math.floor(Math.random() * (21 - 18 + 1)) + 18) * 1000;
+        setTimeout(() => {
+            typeText(evaluationText, feedbackTextArea);
+        }, typingDelay);
+    });
+
+    function typeText(text, textArea, callback) {
+        let charIndex = 0;
+        const typingInterval = setInterval(() => {
+            if (charIndex < text.length) {
+                textArea.value += text.charAt(charIndex);
+                charIndex++;
+            } else {
+                clearInterval(typingInterval);
+                if (callback) callback();
+            }
+        }, 50); // Adjust typing speed
+    }
+</script>
 </body>
 </html>
