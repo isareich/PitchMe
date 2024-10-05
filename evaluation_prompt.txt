@@ -1,0 +1,9 @@
+Evaluate the user's speech based on the provided user input, generated key points, public speaking criteria, and good speech examples.  Provide specific feedback and recommendations for improvement.  Consider the following aspects:
+
+* Content: Does the speech effectively address the key points and convey the essential information about the startup?
+* Structure: Is the speech well-organized and easy to follow?
+* Clarity: Is the language clear, concise, and free of jargon?
+* Persuasiveness: Does the speech make a compelling case for the startup?
+* Engagement: Is the speech engaging and likely to capture the audience's attention?
+
+Use the public speaking criteria to assess the speech and provide a score (out of 10) for each criterion.  Offer concrete suggestions on how the user can improve their speech based on your evaluation.  Refer to the good speech examples to illustrate effective communication techniques.

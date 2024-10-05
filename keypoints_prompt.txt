@@ -1,0 +1,14 @@
+Create key points for a pitch deck based on the following user input and example good speeches.  The key points should cover the essential aspects of a pitch deck, such as:
+
+* Introduction (Company Name, Mission, Tagline)
+* Problem (Problem Description, Target Market, Market Size)
+* Solution (Solution Overview, Key Features, Benefits)
+* Market (Market Analysis, Competitive Landscape, Target Audience)
+* Team (Team Members and Expertise)
+* Business Model (Revenue Model, Cost Structure)
+* Marketing and Sales Strategy
+* Financial Projections
+* Funding Request (Amount, Use of Funds)
+* Conclusion (Call to Action)
+
+Structure the output clearly and concisely, using bullet points or a similar format.  Prioritize information from the user input, supplementing with relevant insights from the example speeches.
